@@ -6,7 +6,7 @@ import java.io.*;
 public class ParsingExportData {
     
     public void tester() {
-        /* FileResource fr = new FileResource();
+        FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
         countryInfo(parser, "Nauru");
         
@@ -19,17 +19,15 @@ public class ParsingExportData {
         numberOfExporters(parser, "diamonds");
         
         parser = fr.getCSVParser();
-        bigExporters (parser, "$999,999,999,999"); */
+        bigExporters (parser, "$999,999,999,999");
+    }
         
-        // решение Graded Quiz:
+     public void gradedQuiz() {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
-        // listExportersTwoProducts(parser, "cotton", "flowers");
-        // numberOfExporters(parser, "cocoa");
-        // bigExporters (parser, "$999,999,999,999");
-        
-        
-        
+        listExportersTwoProducts(parser, "cotton", "flowers");
+        numberOfExporters(parser, "cocoa");
+        bigExporters (parser, "$999,999,999,999");   
     }
 
     public void countryInfo(CSVParser parser, String country) {
