@@ -1,0 +1,7 @@
+0123456789       // ?????? 9    cgRatio 0
+AAA              //             cgRatio 0
+AAAAAACGCGCG     // ?????? 9    +cgRatio 6/12 0.5
+CGCG                            +cgRatio 1.0
+AAAAAAAAAAAAACG  // ?????? 9    cgRatio 2/15  0.13
+CAAAAAGAA                       cgRatio 2/9 0.22
+AACAAGAAAG       // ?????? 9    cgRatio 3/11 0.27
