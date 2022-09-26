@@ -11,6 +11,13 @@ public class Part3 {
        return false;
     }
     
+    public String lastPart(String stringa, String stringb) {
+        if (stringb.indexOf(stringa) != -1) {
+            return stringb.substring(stringb.indexOf(stringa)+stringa.length());
+        }
+        return stringb;
+    }
+    
     public void test() {
         String stringa = "a";
         String stringb = "kjargfjskskbajkb";
@@ -39,15 +46,5 @@ public class Part3 {
         System.out.println(stringb);
         System.out.println(twoOccurrences(stringa, stringb));
         System.out.println(lastPart(stringa, stringb));
-            
-        System.out.println(""); //разделить результаты
-    
-    }
-    
-    public String lastPart(String stringa, String stringb) {
-        if (stringb.indexOf(stringa) != -1) {
-            return stringb.substring(stringb.indexOf(stringa)+stringa.length());
-        }
-        return stringb;
     }
 }
