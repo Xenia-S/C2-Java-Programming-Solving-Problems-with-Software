@@ -12,7 +12,6 @@ public class Part4 {
                 System.out.println(s.substring(string_start, string_end+1));
             }
         }
-
     }
 
     public void testfindYoutubeLinks() {
@@ -26,7 +25,6 @@ public class Part4 {
                 System.out.println(s.substring(string_start, string_end+1));
             }
         }
-    
     }
         
 
