@@ -22,9 +22,7 @@ public class Part3 {
         }
         System.out.println("Strings > 9 is " + count9);
         System.out.println("Strings cgRatio > 0.35 is " + countCG);
-        System.out.println("Longest gene is " + longestGene);
-        
-       
+        System.out.println("Longest gene is " + longestGene);  
     }
     
     public float cgRatio(String dna) {
