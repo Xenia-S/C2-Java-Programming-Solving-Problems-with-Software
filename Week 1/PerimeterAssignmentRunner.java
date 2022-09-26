@@ -45,7 +45,7 @@ public class PerimeterAssignmentRunner {
         double lx = 0.0;
         for (Point pt : s.getPoints()) {
             double x = pt.getX();
-            if (x>lx) {
+            if (x > lx) {
                 lx = x;
             }
         }
@@ -59,10 +59,9 @@ public class PerimeterAssignmentRunner {
             FileResource fr = new FileResource(f);
             Shape s = new Shape(fr);
             double per = getPerimeter (s);
-            if (per>lper) {
+            if (per > lper) {
                 lper = per;
             }
-            
         }
         return lper;
     }
@@ -75,7 +74,7 @@ public class PerimeterAssignmentRunner {
             FileResource fr = new FileResource(f);
             Shape s = new Shape(fr);
             double per = getPerimeter (s);
-            if (per>lper) {
+            if (per > lper) {
                 lper = per;
                 lfile = f;
             }
@@ -101,7 +100,6 @@ public class PerimeterAssignmentRunner {
     public void testPerimeterMultipleFiles() {
         double largest = getLargestPerimeterMultipleFiles();
         System.out.println("Largest perimeter is: " + largest);
-    }
     }
 
     public void testFileWithLargestPerimeter() {
