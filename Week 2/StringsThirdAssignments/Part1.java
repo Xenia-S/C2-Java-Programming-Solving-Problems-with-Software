@@ -42,9 +42,7 @@ public class Part1 {
                 break;
             }
             System.out.println(gene);
-            // startIndex = startIndex + gene.length();
             startSearchIndex = dna.indexOf(gene, startSearchIndex) + gene.length();
-            // System.out.println(startSearchIndex);
         }
     }
     
@@ -118,20 +116,9 @@ public class Part1 {
         System.out.println("Genes cgRatio > 0.35 is " + countCG);
         System.out.println("Longest gene is " + longestGene.length() + " " + longestGene);
         System.out.println("Total genes " + countAll);
-        
-       
     }
     
      
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     //TESTS:
@@ -225,26 +212,22 @@ public class Part1 {
         String gene = findGene(dna, 0);
         System.out.println(dna);
         System.out.println(gene);
-        
-        //         |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+
         dna = "aaatATGttzzzxxxaaatttzzzaaagggaaatttzzzxxxNOSTOP";
         gene = findGene(dna, 0);
         System.out.println(dna);
         System.out.println(gene);
         
-        //         |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
         dna = "aaatATGttzzzxxxaaTAAatttzTGAzzaaagggaaattTAGtzzzxxx";
         gene = findGene(dna, 0);
         System.out.println(dna);
         System.out.println(gene);
         
-        //         |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
         dna = "aaatATGttzzzxxxaTAAatttzzTGAzzaaagggaaatTAGtzzzxxx";
         gene = findGene(dna, 0);
         System.out.println(dna);
         System.out.println(gene);
         
-        //         |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
         dna = "aaatATGttzzzxxxaaTAAatttzzTGAzzaaagggaaatttTAGtzzzxxx";
         gene = findGene(dna, 0);
         System.out.println(dna);
@@ -252,27 +235,20 @@ public class Part1 {
     }
     
     public void test() {
-        //            012345678901234567890123456789012
-        //                |  |  |  |  |  |  |  |  |
         String dna = "brjyATGrbflebfTAAvefbvTAAlebvb";
         int testStopCodonIndex = findStopCodon(dna, 4, "TAA");
         System.out.println(testStopCodonIndex);
         
-        //     0123456789012345678901234567890123456789012345678901234567890123456789
-        //        |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
         dna = "jfgATTkjfglrklkrhTAAblkdbkTAAldbkdTAAbflkTAAdflkTAAfkdfkdfbjkdbjkbkjb";
         testStopCodonIndex = findStopCodon(dna, 3, "TAA");
         System.out.println(testStopCodonIndex);
         
-        //     012345678901234567890
         dna = "dgdfbbdbdbdbdbdfdfbdf";
         testStopCodonIndex = findStopCodon(dna, 0, "TAA");
         System.out.println(testStopCodonIndex);
         
-        //     012345678901234567890
         dna = "dgd";
         testStopCodonIndex = findStopCodon(dna, 0, "TAA");
         System.out.println(testStopCodonIndex);
     }
-    
 }
