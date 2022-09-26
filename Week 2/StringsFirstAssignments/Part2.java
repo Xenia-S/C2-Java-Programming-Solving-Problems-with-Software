@@ -1,11 +1,3 @@
-
-/**
- * Write a description of Part2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import edu.duke.*;
 import java.io.*;
 
@@ -25,7 +17,7 @@ public class Part2 {
                return "There is no stop Codon";
             }  
         }
-       if ((endIndex-startIndex)%3 == 0) {
+       if ((endIndex-startIndex) % 3 == 0) {
            return dna.substring(startIndex, endIndex+3);
         }
         else {
